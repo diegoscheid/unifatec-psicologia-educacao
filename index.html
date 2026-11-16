@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ambiente acadêmico da disciplina Educação e modelagem de processos ensino-aprendizagem — UNIFATEC, Curso de Psicologia.">
+  <title>Educação e modelagem de processos ensino-aprendizagem | UNIFATEC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="Página inicial">
+        <span class="brandmark">Ψ</span>
+        <span class="institution">UNIFATEC</span>
+        <span class="course-name">Curso de Psicologia</span>
+      </a>
+      <div class="navlabel">DISCIPLINA</div>
+      <nav class="navlist" aria-label="Navegação principal">
+        <button class="navbtn active" data-page="inicio"><span class="ico">⌂</span> Visão geral</button>
+        <button class="navbtn" data-page="aulas"><span class="ico">▦</span> Aulas e calendário</button>
+        <button class="navbtn" data-page="materiais"><span class="ico">▤</span> Materiais</button>
+        <button class="navbtn" data-page="avaliacoes"><span class="ico">✓</span> Avaliações</button>
+        <button class="navbtn" data-page="forum"><span class="ico">◌</span> Fórum de discussão</button>
+        <button class="navbtn" data-page="avisos"><span class="ico">⚑</span> Avisos</button>
+      </nav>
+      <div class="sidebarfoot">UNIFATEC<br>Curso de Psicologia<br><br>Ambiente de aprendizagem</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="crumb">UNIFATEC <span>/</span> <strong id="breadcrumb">Visão geral</strong></div></header>
+      <div class="content">
+        <section class="page" id="page-inicio">
+          <div class="hero">
+            <div class="eyebrow">UNIFATEC · CURSO DE PSICOLOGIA</div>
+            <h1>Educação e modelagem de processos ensino-aprendizagem</h1>
+            <div class="hero-meta"><span>◷ Disciplina presencial</span><span>◈ Graduação em Psicologia</span><span>♧ Prof. Me. Diego Scheidweiler Ferreira</span></div>
+          </div>
+          <div class="sectionhead"><h2>Apresentação da disciplina</h2></div>
+          <div class="card">
+            <p>A disciplina propõe uma reflexão sobre os processos de ensino e aprendizagem, articulando fundamentos teóricos da educação, contribuições da Psicologia e possibilidades de planejamento e modelagem de experiências educativas.</p>
+            <div class="objective"><h3>Objetivo geral</h3><p>Compreender e analisar os processos de ensino-aprendizagem, desenvolvendo capacidade crítica para planejar experiências educativas.</p></div>
+            <div class="professor"><span class="eyebrow">PROFESSOR RESPONSÁVEL</span><strong>Prof. Me. Diego Scheidweiler Ferreira</strong></div>
+          </div>
+          <div class="twocol">
+            <div>
+              <div class="sectionhead"><h2>Próxima aula</h2><button class="textbtn" data-go="aulas">Ver calendário →</button></div>
+              <div class="card next-card"><div class="lesson"><div class="datebox"><strong>18</strong><small>NOV</small></div><div class="lessontext"><strong>Teorias da aprendizagem</strong><small>Fundamentos e perspectivas teóricas</small><span class="tag blue">Próxima aula · exemplo</span></div></div><p>Consulte os materiais preparatórios e participe da discussão antes do encontro.</p><button class="btn primary" data-go="aulas">Acessar aula</button></div>
+            </div>
+            <div>
+              <div class="sectionhead"><h2>Últimos avisos</h2><button class="textbtn" data-go="avisos">Ver todos →</button></div>
+              <div class="notice"><strong>Materiais disponíveis</strong><p>Consulte os textos indicados para a próxima aula.</p></div>
+              <div class="notice"><strong>Fórum aberto</strong><p>Participe da discussão da unidade atual.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page hidden" id="page-aulas">
+          <div class="eyebrow">PROGRAMAÇÃO ACADÊMICA</div><h1>Aulas e calendário</h1><p>Acompanhe o percurso da disciplina, consulte os temas e acesse a página de cada encontro.</p>
+          <div class="tabs"><button class="tab active" data-filter="all">Todas as aulas</button><button class="tab" data-filter="done">Realizadas</button><button class="tab" data-filter="upcoming">Próximas</button></div>
+          <div class="card" id="class-list"></div>
+        </section>
+
+        <section class="page hidden" id="page-aula-detalhe">
+          <button class="textbtn" data-go="aulas">← Voltar ao calendário</button>
+          <div class="eyebrow top-space" id="lesson-number">AULA</div><h1 id="lesson-title">Tema da aula</h1><p id="lesson-description"></p>
+          <div class="tabs"><button class="tab active" data-ltab="overview">Visão geral</button><button class="tab" data-ltab="prep">Preparação</button><button class="tab" data-ltab="forum">Discussão</button></div>
+          <div id="lesson-overview" class="card"><h3>Objetivos de aprendizagem</h3><p>Compreender os conceitos fundamentais e suas relações com a prática educativa.</p><h3>Conteúdos</h3><p>Fundamentos teóricos, conceitos centrais, aplicações e reflexão crítica.</p><h3>Atividade proposta</h3><p>Reflexão individual e discussão coletiva a partir das questões orientadoras.</p></div>
+          <div id="lesson-prep" class="card hidden"><h3>Materiais preparatórios</h3><p>Consulte a seção de materiais para acessar leituras e recursos indicados.</p><button class="btn" data-go="materiais">Abrir materiais</button></div>
+          <div id="lesson-forum" class="card hidden"><h3>Discussão da aula</h3><p>Compartilhe suas reflexões e converse com os colegas.</p><button class="btn primary" data-go="forum">Ir para o fórum</button></div>
+        </section>
+
+        <section class="page hidden" id="page-materiais">
+          <div class="eyebrow">BIBLIOTECA DA DISCIPLINA</div><h1>Materiais de estudo</h1><p>Consulte os materiais organizados por aula, com indicações de leitura e recursos para aprofundamento.</p>
+          <div class="tabs"><button class="tab active" data-mfilter="all">Todas as aulas</button><button class="tab" data-mfilter="required">Obrigatórios</button><button class="tab" data-mfilter="extra">Complementares</button></div>
+          <div id="material-list"></div>
+        </section>
+
+        <section class="page hidden" id="page-avaliacoes">
+          <div class="eyebrow">ACOMPANHAMENTO DA APRENDIZAGEM</div><h1>Avaliações</h1><p>Conheça as atividades avaliativas, seus objetivos, orientações e prazos.</p>
+          <div id="assessment-list" class="card"></div>
+          <div class="notice"><strong>Orientação geral</strong><p>Leia atentamente as instruções de cada atividade. Os critérios de avaliação e os prazos definitivos serão informados pelo professor.</p></div>
+        </section>
+
+        <section class="page hidden" id="page-forum">
+          <div class="eyebrow">APRENDIZAGEM COLETIVA</div><h1>Fórum de discussão</h1><p>Um espaço para compartilhar ideias, formular perguntas e construir reflexões com os colegas.</p>
+          <div class="notice"><strong>Como participar?</strong><p>Leia a questão disparadora, compartilhe sua perspectiva e dialogue respeitosamente com as contribuições da turma.</p></div>
+          <div class="sectionhead"><h2>Discussões por aula</h2><span class="tag">Participação aberta</span></div>
+          <div id="forum-list"></div>
+          <div class="card forum-detail" id="forum-detail"><div class="eyebrow">DISCUSSÃO SELECIONADA</div><h2 id="forum-title">Aula 01</h2><p id="forum-question"></p><div id="comments"></div>
+            <div class="comment-form"><h3>Compartilhe sua reflexão</h3><input class="field" id="comment-name" placeholder="Seu nome (opcional)"><textarea class="field" id="comment-text" placeholder="Escreva sua contribuição..."></textarea><button class="btn primary" id="post-comment">Publicar comentário</button><div id="comment-feedback" class="muted" aria-live="polite"></div></div>
+          </div>
+        </section>
+
+        <section class="page hidden" id="page-avisos">
+          <div class="eyebrow">COMUNICAÇÃO DA DISCIPLINA</div><h1>Avisos e lembretes</h1><p>Acompanhe comunicados, orientações e informações importantes do professor.</p><div id="notice-list"></div>
+        </section>
+        <footer class="footer">UNIFATEC · CURSO DE PSICOLOGIA · EDUCAÇÃO E MODELAGEM DE PROCESSOS ENSINO-APRENDIZAGEM</footer>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
